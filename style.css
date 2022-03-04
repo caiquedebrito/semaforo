@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 97vh;
+    background-image: url(img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+#container{
+    margin: 10px auto;
+    background-color: black;
+    max-width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 20px;
+    box-shadow: inset 6px 6px 10px #ffffff38, inset -6px -6px 10px #ffffff38, inset 6px -6px 10px #ffffff38, inset -6px 6px 10px #ffffff38;
+}
+
+#container > div{
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 1px -7px 10px grey, 1px 7px 10px grey;
+}
+
+#green{
+    background-color: rgb(54, 92, 54);
+    border-radius: 50%;
+}
+
+#yellow{
+    background-color: rgb(77, 77, 50);
+    border-radius: 50%;
+}
+
+#red{
+    background-color: rgb(90, 57, 57);
+    border-radius: 50%;
+}
+
+#commands{
+    max-width: 400px;
+    min-height: 70px;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+}
+
+#commands > button{
+    background-color: rgba(153, 153, 153, 0.151);
+    display: block;
+    width: 33%;
+    padding: 0 10px;
+    font-weight: 900;
+
+    border-radius: 55%;
+    border: unset 1px solid;
+    text-shadow: 2px 2px 10px rgb(252, 252, 252);
+}
+
+#green-btn:hover {
+    color: green;
+}
+
+#yellow-btn:hover {
+    color: rgb(179, 179, 1);
+}
+
+#red-btn:hover {
+    color: red;
+}
+
+#auto-btn:hover {
+    color: lightblue;
+}
+
+@media (max-width: 350px) {
+    #commands{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #commands > button {
+        height: 80px;
+        width: 100px;
+    }
+}
